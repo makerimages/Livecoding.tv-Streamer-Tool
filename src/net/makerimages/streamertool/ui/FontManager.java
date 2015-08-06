@@ -11,8 +11,8 @@ import java.io.IOException;
  */
 public class FontManager {
 
-    Font primary;
-    Font primarySmaller;
+    public Font primary;
+    public Font primarySmaller;
 
     public FontManager() {
         File primaryFile = new File("res/fonts/Amble-Regular.ttf");

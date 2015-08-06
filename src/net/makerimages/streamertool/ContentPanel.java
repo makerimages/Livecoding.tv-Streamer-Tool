@@ -3,6 +3,7 @@ package net.makerimages.streamertool;
 import net.makerimages.streamertool.actionpane.ActionPaneManager;
 import net.makerimages.streamertool.actionpane.DashboardActionPane;
 import net.makerimages.streamertool.actionpane.LoginActionPane;
+import net.makerimages.streamertool.actionpane.OverlayManagementActionPane;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,6 +23,7 @@ public class ContentPanel extends JPanel implements MouseMotionListener, MouseLi
         actionPaneManager = new ActionPaneManager();
         actionPaneManager.addActionPane(new LoginActionPane());
         actionPaneManager.addActionPane(new DashboardActionPane());
+        actionPaneManager.addActionPane(new OverlayManagementActionPane());
     }
 
     @Override
